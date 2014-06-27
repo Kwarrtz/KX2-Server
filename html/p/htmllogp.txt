@@ -1,0 +1,602 @@
+Started webserver...
+192.168.1.109 - - [03/Feb/2014 23:15:35] "GET / HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:36] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:36] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:36] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:36] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:40] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:40] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:40] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:42] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:42] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:42] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:44] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:44] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:15:44] "GET /gr.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "webserver.py", line 154, in <module>
+    main()
+  File "webserver.py", line 144, in main
+    server = HTTPServer(('', 8080), MyHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+192.168.1.109 - - [03/Feb/2014 23:20:27] "GET /test HTTP/1.1" 200 -
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.109 - - [03/Feb/2014 23:40:57] "GET /status HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:41:03] "GET /id HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 21:04:58] "GET / HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 21:04:58] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 21:04:58] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 21:04:58] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 21:04:58] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:48:44] "GET / HTTP/1.1" 200 -
+^C received, shutting down webserver...
+Started webserver...
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.160 - - [13/Feb/2014 15:39:35] "GET / HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 15:39:36] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 15:39:36] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 15:39:36] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 15:39:36] "GET /favicon.ico HTTP/1.1" 200 -
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.160 - - [13/Feb/2014 15:55:25] code 404, message File Not Found: /x
+<BR>
+192.168.1.160 - - [13/Feb/2014 15:55:25] "GET /x HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "webserver.py", line 88, in do_GET
+    self.send_error(404, "File Not Found: %s\n<BR>" % (self.path, e))
+TypeError: not all arguments converted during string formatting
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.160 - - [13/Feb/2014 15:57:17] code 404, message File Not Found: /x.html
+<BR>
+192.168.1.160 - - [13/Feb/2014 15:57:17] "GET /x.html HTTP/1.1" 404 -
+192.168.1.160 - - [13/Feb/2014 15:57:36] code 404, message File Not Found: /x
+<BR>
+192.168.1.160 - - [13/Feb/2014 15:57:36] "GET /x HTTP/1.1" 404 -
+192.168.1.160 - - [13/Feb/2014 15:57:45] code 404, message File Not Found: /x.html
+<BR>
+192.168.1.160 - - [13/Feb/2014 15:57:45] "GET /x.html HTTP/1.1" 404 -
+^C received, shutting down webserver...
+Started webserver...
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.160 - - [13/Feb/2014 17:11:44] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "webserverp.py", line 69, in do_GET
+    self.wfilw.write(f.read())
+AttributeError: MyHandler instance has no attribute 'wfilw'
+^C received, shutting down webserver...
+Started webserver...
+192.168.1.160 - - [13/Feb/2014 17:12:51] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:12:52] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:14] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:15] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:17] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:17] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:19] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:14:20] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:03] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:03] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:05] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:06] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:08] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:17:08] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:18:41] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:18:41] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:18:46] "GET /HTPY_Test.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:18:47] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:54:27] "GET /x/new/x_info1.htpy HTTP/1.1" 200 -
+python2.7: can't open file './/x/new/x_info1.htpy': [Errno 2] No such file or directory
+192.168.1.160 - - [13/Feb/2014 17:56:20] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+  File ".//x/new/x_info.htpy", line 5
+    print('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" http://www.w3.org/TR/html4/loose.dtd">\n<html>\n<head>\n<title> Statistics </title>\n<link rel="stylesheet" type="text/css" href="x.css">\n</head>\n<body>\n<div>\n<!--left column-->\n<div id="leftcolumn" class="left">\n<h2 class="size24">RasPi_1</h2>\n<p class="dimgrey nav">\n<a href="x_mnpg1.html">Main Page</a><br>\n<a href="x_info1.html">Info</a><br>\n<a href="x_upld1.html">File Upload</a><br>\n<a href="x_dnld1.html">File Download</a><br>\n<img src="../../gr.jpg" height="15px" width="7px" id="navindicator">Statistics<br>\n</p>\n</div>\n<!--middle column-->\n<div id="centercolumn">\n<h1 class="size36">GET's on this server: ' + number '</h1>\n<!--footer-->\n<div id="footer">\n<h6 class="centert size8 bottom">Version 2 (dev)</h6>\n</div>\n</div>\n<!--right column-->\n<div id="rightcolumn">\nNot ready for change?<br>\n<a href="../../original/opening_page1.html">Click</a> to change back\n</div>\n</div>\n</body>\n</html>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+SyntaxError: invalid syntax
+192.168.1.160 - - [13/Feb/2014 17:56:25] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+  File ".//x/new/x_info.htpy", line 5
+    print('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" http://www.w3.org/TR/html4/loose.dtd">\n<html>\n<head>\n<title> Statistics </title>\n<link rel="stylesheet" type="text/css" href="x.css">\n</head>\n<body>\n<div>\n<!--left column-->\n<div id="leftcolumn" class="left">\n<h2 class="size24">RasPi_1</h2>\n<p class="dimgrey nav">\n<a href="x_mnpg1.html">Main Page</a><br>\n<a href="x_info1.html">Info</a><br>\n<a href="x_upld1.html">File Upload</a><br>\n<a href="x_dnld1.html">File Download</a><br>\n<img src="../../gr.jpg" height="15px" width="7px" id="navindicator">Statistics<br>\n</p>\n</div>\n<!--middle column-->\n<div id="centercolumn">\n<h1 class="size36">GET's on this server: ' + number '</h1>\n<!--footer-->\n<div id="footer">\n<h6 class="centert size8 bottom">Version 2 (dev)</h6>\n</div>\n</div>\n<!--right column-->\n<div id="rightcolumn">\nNot ready for change?<br>\n<a href="../../original/opening_page1.html">Click</a> to change back\n</div>\n</div>\n</body>\n</html>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+SyntaxError: invalid syntax
+192.168.1.160 - - [13/Feb/2014 17:56:26] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 17:57:05] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+  File ".//x/new/x_info.htpy", line 5
+    print('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" http://www.w3.org/TR/html4/loose.dtd">\n<html>\n<head>\n<title> Statistics </title>\n<link rel="stylesheet" type="text/css" href="x.css">\n</head>\n<body>\n<div>\n<!--left column-->\n<div id="leftcolumn" class="left">\n<h2 class="size24">RasPi_1</h2>\n<p class="dimgrey nav">\n<a href="x_mnpg1.html">Main Page</a><br>\n<a href="x_info1.html">Info</a><br>\n<a href="x_upld1.html">File Upload</a><br>\n<a href="x_dnld1.html">File Download</a><br>\n<img src="../../gr.jpg" height="15px" width="7px" id="navindicator">Statistics<br>\n</p>\n</div>\n<!--middle column-->\n<div id="centercolumn">\n<h1 class="size36">GET's on this server: ' + number '</h1>\n<!--footer-->\n<div id="footer">\n<h6 class="centert size8 bottom">Version 2 (dev)</h6>\n</div>\n</div>\n<!--right column-->\n<div id="rightcolumn">\nNot ready for change?<br>\n<a href="../../original/opening_page1.html">Click</a> to change back\n</div>\n</div>\n</body>\n</html>')
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+SyntaxError: invalid syntax
+192.168.1.160 - - [13/Feb/2014 17:57:05] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:00:49] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File ".//x/new/x_info.htpy", line 26, in <module>
+    <h1 class="size36">GET's on this server: ''' + number + '''</h1>
+TypeError: cannot concatenate 'str' and 'int' objects
+192.168.1.160 - - [13/Feb/2014 18:00:50] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:03:36] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:03:36] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:03:36] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:03:36] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:01] "GET /x/new/x_info.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:01] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:01] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:01] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:11] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:11] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:11] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:12] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:12] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:12] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:04:20] "GET /x/new/x_stat.htpy HTTP/1.1" 200 -
+python2.7: can't open file './/x/new/x_stat.htpy': [Errno 2] No such file or directory
+192.168.1.160 - - [13/Feb/2014 18:04:36] "GET /x/new/x_stat.htpy HTTP/1.1" 200 -
+python2.7: can't open file './/x/new/x_stat.htpy': [Errno 2] No such file or directory
+192.168.1.160 - - [13/Feb/2014 18:04:37] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:51] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:51] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:51] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:55] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:55] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:55] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:05:55] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:16] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:16] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:16] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:16] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:20] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:20] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:20] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [13/Feb/2014 18:08:20] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.158 - - [25/Feb/2014 11:12:08] "GET /x/new/x_stat.htpy HTTP/1.1" 200 -
+python2.7: can't open file './/x/new/x_stat.htpy': [Errno 2] No such file or directory
+192.168.1.158 - - [25/Feb/2014 11:12:13] "GET /favicon.ico HTTP/1.1" 200 -
+
+****************************************************
+SERVER MOVED TO KODING ACCOUNT AT kwarrtz.kd.io
+****************************************************
+
+Started webserver...
+10.127.4.65 - - [04/Mar/2014 22:35:12] "GET /favicon.ico HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:35:15] "GET / HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:35:16] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:35:16] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:35:16] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:37:28] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:37:28] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:37:28] "GET /gr.jpg HTTP/1.1" 200 -
+^C received, shutting down webserver...
+Started webserver...
+10.127.4.65 - - [04/Mar/2014 22:54:53] "GET / HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:54] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:54] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:54] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:57] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:57] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:57] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:59] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:59] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:54:59] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:55:00] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:55:00] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:55:00] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:55:02] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File ".//x/new/x_stat1.htpy", line 3, in <module>
+    f = open(os.getenv('HOME') + os.sep + 'raspi1/chatlogx.txt')
+IOError: [Errno 2] No such file or directory: '/home/kwarrtz/raspi1/chatlogx.txt'
+10.127.4.65 - - [04/Mar/2014 22:55:09] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File ".//x/new/x_stat1.htpy", line 3, in <module>
+    f = open(os.getenv('HOME') + os.sep + 'raspi1/chatlogx.txt')
+IOError: [Errno 2] No such file or directory: '/home/kwarrtz/raspi1/chatlogx.txt'
+10.127.4.65 - - [04/Mar/2014 22:55:09] "GET /favicon.ico HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "webserverp.py", line 155, in <module>
+    main()
+  File "webserverp.py", line 145, in main
+    server = HTTPServer(('', 8888), MyHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "webserverp.py", line 155, in <module>
+    main()
+  File "webserverp.py", line 145, in main
+    server = HTTPServer(('', 8888), MyHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+10.127.4.65 - - [04/Mar/2014 22:58:51] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:52] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:52] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:52] "GET /favicon.ico HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:55] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:55] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:55] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:55] "GET /favicon.ico HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:57] "GET /x/new/x_stat1.htpy HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:58] "GET /x/new/x.css HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:58] "GET /gr.jpg HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 22:58:58] "GET /favicon.ico HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 23:02:31] "GET /hmdsp1.html HTTP/1.1" 200 -
+10.127.4.65 - - [04/Mar/2014 23:02:31] "GET /hmdsp1.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 00:55:42] code 404, message File Not Found: /home.html
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:55:42] "GET /home.html HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 00:55:49] code 404, message File Not Found: /home.html
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:55:50] "GET /home.html HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 00:55:51] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:55:51] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 00:56:10] code 404, message File Not Found: /home.html
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:56:10] "GET /home.html HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 00:56:10] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:56:10] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 00:58:25] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 00:58:25] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 00:58:25] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 00:58:25] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:01:56] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:01:56] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:01:56] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:01:56] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:02:18] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:02:18] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:02:18] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:02:18] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:03:51] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:03:51] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:03:52] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:03:52] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:04:11] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:04:11] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:04:11] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:04:11] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:04:28] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:04:28] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:04:28] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:04:28] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:05:01] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:01] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:01] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:05:01] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:05:31] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:31] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:32] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:05:32] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:05:34] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:34] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:05:34] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:05:34] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:07:33] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:07:33] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:07:33] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:07:33] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:08:08] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:08:08] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:08:08] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:08:08] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:08:26] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:08:26] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:08:26] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:08:26] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:10:34] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:10:34] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:10:34] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:10:34] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:11:15] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:11:15] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:11:15] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:11:15] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:11:42] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:11:42] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:11:42] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:11:42] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:12:14] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:14] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:14] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:12:14] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:12:18] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:18] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:18] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:12:18] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:12:56] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:57] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:57] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:12:57] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:12:58] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:58] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:12:59] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:12:59] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:13:38] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:13:38] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:13:39] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:13:39] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:14:16] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:14:16] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:14:16] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:14:16] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:14:30] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:14:30] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:14:30] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:14:30] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:15:16] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:15:16] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:15:16] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:15:16] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:16:12] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:12] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:12] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:16:12] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:16:28] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:28] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:28] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:16:28] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:16:49] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:49] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:16:50] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:16:50] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:17:02] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:17:02] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:17:25] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:17:25] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:17:25] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:17:25] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:18:20] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:18:20] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:18:20] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:18:20] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:18:31] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:18:32] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:18:32] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:18:32] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:22:23] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:22:23] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:22:23] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:22:23] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:23:07] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:23:08] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:23:08] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:23:08] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:24:28] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:24:28] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:24:31] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:24:31] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:26:26] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:26:26] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:26:26] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:26:26] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:27:36] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:27:36] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:27:36] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:27:36] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:28:15] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:28:15] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:28:16] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:28:16] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:28:41] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:28:41] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:28:41] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:28:41] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:29:16] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:29:16] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:29:16] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:29:16] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:29:47] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:29:47] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:29:47] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:29:47] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:30:25] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:30:25] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:30:26] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:30:26] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:31:02] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:31:02] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:31:02] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:31:02] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:33:06] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:33:06] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:33:06] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:33:06] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:34:12] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:34:12] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:34:12] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:34:12] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:35:03] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:35:03] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:35:03] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:35:03] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:36:07] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:36:07] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:36:07] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:36:07] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:36:38] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:36:38] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:36:38] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:36:38] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:37:00] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:00] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:00] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:37:00] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:37:20] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:20] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:20] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:37:20] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:37:48] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:48] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:48] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:37:48] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:37:53] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:54] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:37:54] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:37:54] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.65 - - [05/Mar/2014 01:38:05] "GET /home.html HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:38:05] "GET /home.css HTTP/1.1" 200 -
+10.127.4.65 - - [05/Mar/2014 01:38:05] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.65 - - [05/Mar/2014 01:38:05] "GET /favicon.ico HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "html/p/webserverp.py", line 156, in <module>
+    main()
+  File "html/p/webserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + sep + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz//dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 156, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 145, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Started webserver...
+10.127.4.67 - - [05/Mar/2014 20:33:12] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.67 - - [05/Mar/2014 20:33:12] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.67 - - [05/Mar/2014 20:33:14] "GET / HTTP/1.1" 200 -
+10.127.4.67 - - [05/Mar/2014 20:33:14] code 404, message File Not Found: /favicon.ico
+<BR>
+10.127.4.67 - - [05/Mar/2014 20:33:14] "GET /favicon.ico HTTP/1.1" 404 -
+Started webserver...
+Started webserver...
+Started webserver...
+10.127.4.65 - - [13/Mar/2014 02:49:45] "GET / HTTP/1.1" 200 -
+10.127.4.65 - - [13/Mar/2014 02:50:39] "GET / HTTP/1.1" 200 -
+10.127.4.65 - - [13/Mar/2014 02:50:44] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 157, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 146, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'
+Traceback (most recent call last):
+  File "html/p/htmlserverp.py", line 157, in <module>
+    main()
+  File "html/p/htmlserverp.py", line 146, in main
+    os.chdir(os.getenv('HOME') + '/dev/webserver/html/p/content')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/html/p/content'

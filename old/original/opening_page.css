@@ -1,0 +1,43 @@
+body {
+   width: 100%;
+   min-height: 90%;
+   position: relative;
+   overflow: hidden;
+   background-color: navy;
+}
+
+img {
+   display: block; 
+   margin-left: auto; 
+   margin-right: auto; 
+   margin-top: 20px;
+}
+
+div {
+   width: 70%; 
+   margin: 20% auto;
+   margin-top: 2%; 
+   background-color: #ffffff; 
+   border-style: solid; 
+   border-color: black; 
+   padding: 10px;
+}
+
+h1 {
+   text-align: center; 
+   font-size: 36pt;
+}
+
+h3 {
+    text-align: center; 
+	font-size: 24pt;
+}
+
+p#titlep {
+   font-weight: bold; 
+   font-size: 15pt;
+}
+
+p#normalp {
+   font-size: 13pt;
+}

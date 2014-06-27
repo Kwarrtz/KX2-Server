@@ -1,0 +1,24 @@
+#body {
+ background-color: purple;
+}
+
+
+#text {
+ font-size: 75;
+ text-align: center;
+}
+
+
+#poem {
+ font-size: 36;
+ text-align: center;
+}
+ 
+
+#div {
+ background-color: white;
+ width: 70%;
+ height: 99%;
+ margin-left: auto;
+ margin-right: auto;
+}

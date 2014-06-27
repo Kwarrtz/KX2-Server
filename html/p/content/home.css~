@@ -1,0 +1,24 @@
+
+#main-background {
+    background-color: rgb(150, 150, 150);
+}
+
+#main-div {
+    background-color: rgb(100, 100, 100);
+    width: 60%;
+    height: 60%;
+    margin: 20% auto auto auto;
+    align: center;
+}
+
+#main-title {
+    font-family: "verdana";
+    color: rgb(170, 170, 190);
+    text-align: center;
+}
+    
+#main-subtitle {
+    font-family: "verdana";
+    color: rgb(170, 170, 190);
+    text-align: center;
+}

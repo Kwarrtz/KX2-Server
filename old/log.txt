@@ -1,0 +1,757 @@
+started httpserver...
+^C received, shutting down server
+started httpserver...
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_upld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+^C received, shutting down server
+192.168.1.233 - - [07/May/2013 21:24:36] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:36] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:36] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:36] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:24:38] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:38] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:38] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:38] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:24:39] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:39] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:39] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:39] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:24:40] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:40] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:40] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:40] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:24:42] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:42] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:42] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:24:42] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:25:09] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:25:09] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:25:09] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:25:09] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:26:04] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:05] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:05] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:05] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:26:16] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:17] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:17] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:17] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:26:36] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:36] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:36] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:36] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:26:37] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:37] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:37] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:37] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [07/May/2013 21:26:38] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:38] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:38] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [07/May/2013 21:26:38] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:18:46] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:19:27] code 404, message File Not Found: /upload.html
+<BR>[Errno 2] No such file or directory: './/upload.html'
+192.168.1.233 - - [09/May/2013 21:19:27] "GET /upload.html HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:47:05] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:47:05] code 404, message POST to "/" failed: [Errno 2] No such file or directory: 'x_aftrupld1.html'
+192.168.1.233 - - [09/May/2013 21:47:05] "POST / HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:48:34] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:48:34] code 404, message POST to "/" failed: [Errno 2] No such file or directory: 'x_aftrupld1.html'
+192.168.1.233 - - [09/May/2013 21:48:34] "POST / HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:49:57] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:49:57] code 404, message File Not Found: /x.css
+<BR>[Errno 2] No such file or directory: './/x.css'
+192.168.1.233 - - [09/May/2013 21:49:57] "GET /x.css HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:49:57] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:49:57] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:50:10] code 404, message File Not Found: /x_upld1.html
+<BR>[Errno 2] No such file or directory: './/x_upld1.html'
+192.168.1.233 - - [09/May/2013 21:50:10] "GET /x_upld1.html HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:51:37] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:37] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:37] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:37] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:51:50] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:50] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:50] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:51:50] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:52:01] "POST / HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:01] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:01] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:01] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 21:52:03] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:03] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:03] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 21:52:03] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.233 - - [09/May/2013 22:27:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.4 - - [12/May/2013 09:54:02] "GET /hmdsp1.html HTTP/1.1" 200 -
+192.168.1.4 - - [12/May/2013 09:54:02] "GET /hmdsp1.css HTTP/1.1" 200 -
+192.168.1.4 - - [12/May/2013 09:54:03] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.4 - - [12/May/2013 09:54:03] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.4 - - [12/May/2013 09:54:03] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.4 - - [12/May/2013 09:54:03] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.214 - - [12/May/2013 10:47:27] "GET /hmdsp1.html HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 10:47:27] "GET /hmdsp1.css HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 10:47:28] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 10:47:28] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.214 - - [12/May/2013 10:47:28] code 404, message File Not Found: /apple-touch-icon-precomposed.png
+<BR>[Errno 2] No such file or directory: './/apple-touch-icon-precomposed.png'
+192.168.1.214 - - [12/May/2013 10:47:28] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.214 - - [12/May/2013 18:14:03] "GET /hmdsp1.html HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 18:14:03] "GET /hmdsp1.css HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 18:14:04] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.214 - - [12/May/2013 18:14:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.214 - - [12/May/2013 18:14:04] code 404, message File Not Found: /apple-touch-icon-precomposed.png
+<BR>[Errno 2] No such file or directory: './/apple-touch-icon-precomposed.png'
+192.168.1.214 - - [12/May/2013 18:14:04] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+192.168.1.233 - - [19/May/2013 18:59:51] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.233 - - [19/May/2013 18:59:51] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.233 - - [19/May/2013 18:59:51] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.233 - - [19/May/2013 18:59:51] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.233 - - [19/May/2013 18:59:53] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.233 - - [19/May/2013 18:59:53] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.232 - - [22/May/2013 20:25:07] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:08] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:08] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:08] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:08] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [22/May/2013 20:25:43] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:43] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:43] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [22/May/2013 20:25:43] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [01/Jun/2013 20:51:52] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [01/Jun/2013 20:51:53] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [01/Jun/2013 20:51:53] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [01/Jun/2013 20:51:54] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [01/Jun/2013 20:52:07] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.232 - - [01/Jun/2013 20:52:07] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:02:19] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:20] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:02:21] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:02:21] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:34:59] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:00] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:00] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:00] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:35:05] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:06] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:06] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:06] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:06] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:35:18] "GET /x/unknown.html HTTP/1.1" 200 -
+192.168.1.232 - - [10/Jun/2013 18:35:18] code 404, message File Not Found: /x/x_main.css
+<BR>[Errno 2] No such file or directory: './/x/x_main.css'
+192.168.1.232 - - [10/Jun/2013 18:35:18] "GET /x/x_main.css HTTP/1.1" 404 -
+192.168.1.232 - - [10/Jun/2013 18:35:18] code 404, message File Not Found: /x/gr.jpg
+<BR>[Errno 2] No such file or directory: './/x/gr.jpg'
+192.168.1.232 - - [10/Jun/2013 18:35:18] "GET /x/gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [13/Jun/2013 20:27:09] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [13/Jun/2013 20:27:09] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [13/Jun/2013 20:27:09] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [13/Jun/2013 20:27:09] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:28:47] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:47] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:47] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:47] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:47] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:28:54] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:54] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:54] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:54] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:28:56] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:56] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:56] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:56] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:28:58] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:58] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:58] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:28:58] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:28:59] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:00] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:00] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:00] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:29:03] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:03] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:03] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:03] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:29:04] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:04] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:04] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:04] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:29:05] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:05] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:05] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:05] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:29:06] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:07] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:07] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:29:07] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:53:48] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:53:48] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:53:48] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:53:48] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:53:48] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:54:48] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:54:49] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:54:49] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:54:49] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:54:49] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:55:19] "GET /original/opening_page1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:55:19] "GET /original/opening_page.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:55:19] code 404, message File Not Found: /original/raspilogo.png
+<BR>[Errno 2] No such file or directory: './/original/raspilogo.png'
+192.168.1.232 - - [16/Jun/2013 10:55:19] "GET /original/raspilogo.png HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:55:25] "GET /original/upload2.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:55:55] code 404, message File Not Found: /x_redirect.html
+<BR>[Errno 2] No such file or directory: './/x_redirect.html'
+192.168.1.232 - - [16/Jun/2013 10:55:55] "GET /x_redirect.html HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:56:56] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:56] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:56] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:56] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:56] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:56:59] "GET /original/opening_page1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:59] "GET /original/opening_page.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:56:59] code 404, message File Not Found: /original/raspilogo.png
+<BR>[Errno 2] No such file or directory: './/original/raspilogo.png'
+192.168.1.232 - - [16/Jun/2013 10:56:59] "GET /original/raspilogo.png HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:57:54] "GET /original/opening_page1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:57:54] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:57:54] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 10:57:54] "GET /raspilogo.png HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 10:57:54] "GET /original/opening_page.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:42] "GET /original/opening_page1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:42] "GET /original/opening_page.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:42] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:42] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:42] "GET /raspilogo.png HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 11:00:55] "GET /redirect.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:55] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:55] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:55] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:00:55] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 11:01:00] "GET /original/opening_page1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:00] "GET /original/opening_page.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:00] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:00] "GET /raspilogo.png HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:00] "GET /raspilogo.png HTTP/1.1" 404 -
+192.168.1.232 - - [16/Jun/2013 11:01:02] "GET /redirect.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:02] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:02] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:02] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [16/Jun/2013 11:01:02] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:05] "GET / HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:10] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:10] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:10] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:11] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:31] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:32] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:32] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:32] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:36] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:36] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:39] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:44] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:44] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:44] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:46] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:47] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:47] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:47] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:48] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:48] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:48] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:48] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:49] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:49] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:50] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:50] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:54] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:54] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:54] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:54] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:56] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:56] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:56] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:56] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:17:57] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:57] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:57] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:17:57] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:18:54] "POST / HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:54] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:54] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:54] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.232 - - [29/Jun/2013 22:18:57] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:57] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:57] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.232 - - [29/Jun/2013 22:18:57] "GET /gr.jpg HTTP/1.1" 404 -
+sh: 1: statstart.sh: not found
+192.168.1.157 - - [18/Aug/2013 08:29:20] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:29:20] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 08:30:52] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:30:52] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:30:52] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:30:52] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 08:31:09] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:09] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:09] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:09] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 08:31:33] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:33] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:33] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:33] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 08:31:55] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:55] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:55] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:55] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 08:31:58] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:59] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:59] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 08:31:59] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 09:35:06] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 09:35:07] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 09:35:07] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 09:35:07] "GET /gr.jpg HTTP/1.1" 404 -
+sh: 1: statstart.sh: not found
+192.168.1.157 - - [18/Aug/2013 11:15:14] "GET / HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:14] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:15] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:15] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:15] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 11:15:26] "GET / HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:26] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:27] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:27] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:27] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.157 - - [18/Aug/2013 11:15:45] "GET / HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:45] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:45] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:45] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.157 - - [18/Aug/2013 11:15:45] "GET /gr.jpg HTTP/1.1" 404 -
+  File "webserver1.py", line 39
+    msgList.append([spltMsg[1], spltMsg[2])
+                                          ^
+SyntaxError: invalid syntax
+started httpserver...
+/
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+/favicon.ico
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_upld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_upld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/sndmsg
+/sndmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.160', 60033)
+----------------------------------------
+/getmsg
+/sndmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.160', 60045)
+----------------------------------------
+/sndmsg@dathan@hello
+/getmsg
+/sndmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.160', 60060)
+----------------------------------------
+/getmsg
+/sndmsg@dylan@hello
+/getmsg
+^C received, shutting down server
+started httpserver...
+/
+/favicon.ico
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49743)
+----------------------------------------
+/sndmsg@dylan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49744)
+----------------------------------------
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49745)
+----------------------------------------
+^C received, shutting down server
+started httpserver...
+/sndmsg@dathan@hello
+/sndmsg@dathan@hello
+/getmsg
+/getmsg
+/sndmsg@dylan@hello
+/getmsg
+^C received, shutting down server
+started httpserver...
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49807)
+----------------------------------------
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49808)
+----------------------------------------
+/sndmsg@dylan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49811)
+----------------------------------------
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49812)
+----------------------------------------
+/
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+^C received, shutting down server
+started httpserver...
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49830)
+----------------------------------------
+/getmsg
+^C received, shutting down server
+started httpserver...
+/sndmsg@dathan@hello
+/sndmsg@dylan@hello
+/getmsg
+/clrmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49843)
+----------------------------------------
+/getmsg
+/getmsg
+/
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+/getmsg
+/getmsg
+^C received, shutting down server
+started httpserver...
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56054)
+----------------------------------------
+/favicon.ico
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56056)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@hello@dylan
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56062)
+----------------------------------------
+^C received, shutting down server
+started httpserver...
+/sndmsg@Dathan@d$RasPi1Chat@hello@Dylan
+/sndmsg@Dathan@d$RasPi1Chat@how%20are%20you?@Dylan
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56081)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@how%20are%20you?@Dylan
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56082)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@how?@Dylan
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56083)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@how%20are%20you@Dylan
+/sndmsg@Dathan@d$RasPi1Chat@how%20are%20you!@Dylan
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56086)
+----------------------------------------
+/getmsg@Dylan@password
+/getmsg@Dylan@paassword
+/getmsg@Dylan@paassword
+/clrmsg@Dylan@paassword
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56103)
+----------------------------------------
+/getmsg@Dylan@paassword
+^C received, shutting down server
+started httpserver...
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56120)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@hello,@Dylan
+/sndmsg@Dathan@d$RasPi1Chat@how%20are%20you?@Dylan
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56124)
+----------------------------------------
+/getmsg@Dylan@paassword
+/getmsg@Dylan@paassword
+/getmsg@Dylan@password
+/getMsg@Dylan@password
+/getmsg@Dylan@password
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56353)
+----------------------------------------
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56355)
+----------------------------------------
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56356)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@Hi@Dylan
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56358)
+----------------------------------------
+/getmsg@Dylan@paassword
+/getmsg@Dylan@password
+/getmsg@Dylan@password
+/clrmsg@Dylan@password
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56362)
+----------------------------------------
+^C received, shutting down server
+started httpserver...
+/sndmsg@Dylan@password@hi@Dathan
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56383)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@Hello@Dylan
+/sndmsg@Dathan@d$RasPi1Chat@Hello@Dylan
+/sndmsg@Dylan@password@how%20are%20you@Dathan
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 56404)
+----------------------------------------
+/getmsg@Dylan@password
+/getmsg@Dylan@password
+/getmsg@Dathan@d$RasPi1Chat
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 57017)
+----------------------------------------
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 57019)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@Hello@Dylan
+/sndmsg@dathan@hello
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 57021)
+----------------------------------------
+/sndmsg@Dathan@d$RasPi1Chat@Hello@Dylan
+/sndmsg@Dylan@password@hi@Dathan
+/getmsg@Dylan@password
+/getmsg@Dathan@d$RasPi1Chat
+^C received, shutting down server
+started httpserver...
+/getmsg@Dathan@d$RasPi1Chat
+/getmsg@Dathan@d$RasPi1Chat
+/clrmsg@Dathan@d$RasPi1Chat
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 57066)
+----------------------------------------
+/clrmsg@Datha@d$RasPi1Chat
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 57067)
+----------------------------------------
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 58033)
+----------------------------------------
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49710)
+----------------------------------------
+/
+/x/new/x_mnpg1.html
+/gr.jpg
+/x/new/x.css
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_upld1.html
+/gr.jpg
+/x/new/x.css
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+^C received, shutting down server
+started httpserver...
+/getmsg
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.109', 49734)
+----------------------------------------
+/getmsg@Dylan@password
+/getmsg@D@d$Blah@Dylan
+/
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+^C received, shutting down server
+192.168.1.109 - - [01/Feb/2014 19:38:11] "GET / HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:11] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:12] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:12] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:12] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.109 - - [01/Feb/2014 19:38:16] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:17] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:17] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:17] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.109 - - [01/Feb/2014 19:38:18] "GET /x/new/x_dnld1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:19] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:19] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:19] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.109 - - [01/Feb/2014 19:38:20] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:20] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:20] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:20] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.109 - - [01/Feb/2014 19:38:21] "GET /x/new/x_stat1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:21] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:21] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:38:21] "GET /gr.jpg HTTP/1.1" 404 -
+started httpserver...
+/
+/x/new/x_mnpg1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_info1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_dnld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_upld1.html
+/x/new/x.css
+/gr.jpg
+/x/new/x_stat1.html
+/x/new/x.css
+/gr.jpg
+^C received, shutting down server
+192.168.1.109 - - [01/Feb/2014 19:54:20] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:20] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:20] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:20] "GET /gr.jpg HTTP/1.1" 404 -
+192.168.1.109 - - [01/Feb/2014 19:54:21] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:21] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:21] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.109 - - [01/Feb/2014 19:54:21] "GET /gr.jpg HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "webserver1.py", line 230, in <module>
+    main()
+  File "webserver1.py", line 217, in main
+    sys.stderr.write('Started webserver...')
+NameError: global name 'sys' is not defined
+Traceback (most recent call last):
+  File "webserver1.py", line 230, in <module>
+    main()
+  File "webserver1.py", line 217, in main
+    sys.stderr.write('Started webserver...')
+NameError: global name 'sys' is not defined
+Started webserver...192.168.1.109 - - [03/Feb/2014 00:35:24] "GET / HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 00:35:24] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 00:35:24] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 00:35:24] "GET /gr.jpg HTTP/1.1" 200 -
+^C received, shutting down webserver...Started webserver...
+192.168.1.109 - - [03/Feb/2014 00:37:35] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 00:37:35] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 00:37:35] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:10] "GET / HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:10] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:10] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:10] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:10] "GET /favicon.ico HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:19] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:19] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:19] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:22] "GET /x/new/x_upld1.html HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:22] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:22] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:24] "GET /x/new/x_info1.html HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:24] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:24] "GET /gr.jpg HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:25] "GET /x/new/x_mnpg1.html HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:25] "GET /x/new/x.css HTTP/1.1" 200 -
+192.168.1.160 - - [03/Feb/2014 17:43:25] "GET /gr.jpg HTTP/1.1" 200 -
+^C received, shutting down webserver...
+
+
+
+**************************************************************************************************************
+
+THIS LOG IS OBSOLETE
+IT IS NO LONGER BEING WRITTEN TO DUE TO THE SEPERATION OF SERVERS
+chatlog.txt AND weblog.txt ARE THE CURRENT WORKING LOGS
+RASPI1-CHATSERVER(chatserver.py) WRITES TO chatlog.txt AND RASPI1-WEBSERVER(webserver.py) WRITES TO weblog.txt
+
+**************************************************************************************************************

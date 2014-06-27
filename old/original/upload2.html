@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>
+      File Upload
+    </title>
+  </head>
+  <body style="background-color:navy;">
+    <div style="background-color:white; width:70%; margin:13% auto; border-style:solid; padding:10px;">
+      <h1 style="font-size:36pt; text-align:center;">
+        RasPi_1
+      </h1>
+      <h3 style="font-size:24pt; text-align:center;">
+        File Upload
+      </h3>
+      <form method='POST' enctype='multipart/form-data' action='http://raspi1:8000/'>
+        File to upload: <input type=file name=upfile>
+        <br>
+        <br>
+        <input type=submit value=Press> to upload the file!
+      </form>
+    </div>
+  </body>
+</html>

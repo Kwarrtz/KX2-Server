@@ -1,0 +1,104 @@
+body {
+   margin: 0;
+}
+
+/* left column */
+
+#leftcolumn {
+   width: 10%; 
+   height: 100%; 
+   background-color: darkgrey;
+   padding-top: 5px;
+   padding-left: 6px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: dimgrey;
+  margin: 0 0 0 11;
+}
+
+#navindicator {
+  margin: 0 4 0 0;
+}
+
+#centercolumn {
+   padding-top: 5px;
+   width: 40%;
+   margin-left: auto; 
+   margin-right: auto;
+   margin-top: 0px;
+}
+
+#rightcolumn {
+   position: absolute; 
+   bottom: 0px; 
+   right: 0px;
+}
+
+#footer {
+   position: absolute;
+   width: 100px;
+   left:50%;
+   margin-left: -50px;
+   bottom:0px;
+}
+
+/************* random bits of code***************/
+
+/* text font size 24 */
+.size24 {
+   font-size: 24pt;
+}
+
+/* text font size 36 */
+.size36 {
+   font-size: 36pt;
+}
+
+/* text font size 8 */
+.size8 {
+   font-size: 8pt;
+}
+
+/** division width 50% **/
+.width50 {
+   width:50%;
+}
+
+/* grey text */
+.dimgrey {
+  color: dimgrey;
+}
+
+/** bold **/
+.bold {
+   font-weight: bold;
+}
+
+/** used to center images and divisions **/
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   /*text-align: center;**/   /**IE hack will also center images**/
+}
+
+/** used to center text**/
+.centert {
+   text-align: center;
+}
+
+
+/**used to align text, images and divisions with the bottom of the page **/
+.bottom {
+   margin-bottom:0%;
+}
+
+.bdr {
+   border: solid;
+}
+
+.left {float: left;}
+
+.right {float: right;}

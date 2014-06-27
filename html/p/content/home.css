@@ -1,0 +1,46 @@
+
+#main-background {
+    background-color: rgb(150, 150, 150);
+}
+
+#back-div {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    align: center;
+    margin: 5% auto auto auto;
+}
+
+#main-div {
+    position: absolute;
+    background-color: rgb(100, 100, 100);
+    width: 95%;
+    height: 100%;
+    margin: 0% auto auto auto;
+    align: right;
+}
+
+#main-title {
+    position: relative;
+    font-family: "verdana";
+    color: rgb(170, 170, 190);
+    margin: 30% auto auto auto;
+    text-align: center;
+}
+    
+#main-subtitle {
+    position: relative;
+    font-family: "verdana";
+    color: rgb(170, 170, 190);
+    text-align: center;
+}
+
+#nav-div {
+    position: absolute;
+    width: 75px;
+    height: 100%;
+    align: left;
+    background-color: rgb(120, 120, 130);
+}
+
+a:link {color: #444466; text-decoration: none;}

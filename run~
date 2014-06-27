@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$1" == "-chatx" ]
+then
+    python2.7 chat/x/chatserverx.py 2>> chat/x/chatlogx.txt
+fi
+
+if [ "$1" == "-htmlp" ]
+then
+    python2.7 html/p/htmlserverp.py 2>> html/p/htmllogp.txt
+fi

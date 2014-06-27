@@ -1,0 +1,22 @@
+
+ID ABREVIATIONS
+---------------
+
+S - Standard
+X - Expirimental
+P - Playground
+
+NUMBERS
+-------
+
+9 - Game
+8 - HTML
+7 - Chat
+
+PATTERNS
+--------
+
+x0x0 - Standard
+x000 - Expirimental
+xxxx - Playground
+

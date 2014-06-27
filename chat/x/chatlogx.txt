@@ -1,0 +1,242 @@
+Started chatserver...
+192.168.1.109 - - [03/Feb/2014 23:20:39] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chatserver.py", line 102, in do_GET
+    f.close()
+NameError: global name 'f' is not defined
+192.168.1.109 - - [03/Feb/2014 23:20:39] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.109 - - [03/Feb/2014 23:21:07] "GET /getmsg@Dylan@password HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:21:17] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.109 - - [03/Feb/2014 23:21:26] "GET /getmsg@Dathan@d$RasPi1Chat HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:21:37] "GET /favicon.ico HTTP/1.1" 404 -
+^C received, shutting down chatserver...
+Started chatserver...
+192.168.1.109 - - [03/Feb/2014 23:33:26] "GET / HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:33:26] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.109 - - [03/Feb/2014 23:33:33] "GET /id HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:33:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.109 - - [03/Feb/2014 23:33:39] "GET /status HTTP/1.1" 404 -
+192.168.1.109 - - [03/Feb/2014 23:33:40] "GET /favicon.ico HTTP/1.1" 404 -
+^C received, shutting down chatserver...
+Started chatserver...
+192.168.1.109 - - [03/Feb/2014 23:34:48] "GET /status HTTP/1.1" 200 -
+192.168.1.109 - - [03/Feb/2014 23:34:48] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.160 - - [10/Feb/2014 20:50:05] "GET / HTTP/1.1" 200 -
+192.168.1.160 - - [10/Feb/2014 20:50:06] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.160 - - [10/Feb/2014 20:50:51] "GET / HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:49:15] "GET /getmsg@Dathan@d HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:49:45] "GET /getmsg@Dylan@Password HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:49:49] "GET /getmsg@Dylan@password HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:50:56] "GET /getmsg@Dathan@d HTTP/1.1" 200 -
+^C received, shutting down chatserver...
+  File "chatserver.py", line 16
+    roomList = 
+              ^
+SyntaxError: invalid syntax
+Started chatserver...
+192.168.1.160 - - [12/Feb/2014 17:57:21] "GET /uptusr HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:57:48] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:58:00] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:58:11] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:58:32] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 17:58:48] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 18:01:27] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+192.168.1.160 - - [12/Feb/2014 18:02:01] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+
+****************************************************
+MOVED SERVER TO  KODING ACOUNT AT kwarrtz.kd.io
+****************************************************
+
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 7, in <module>
+    msgFile = open('msgs.txt', 'r+')
+IOError: [Errno 2] No such file or directory: 'msgs.txt'
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 7, in <module>
+    msgFile = open('msgs.txt', 'r+')
+IOError: [Errno 2] No such file or directory: 'msgs.txt'
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 14, in <module>
+    roomList = eval(roomFile.read())
+NameError: name 'roomFile' is not defined
+Started chatserver...
+10.127.4.67 - - [05/Mar/2014 23:10:04] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.67 - - [05/Mar/2014 23:10:09] "GET /descrip HTTP/1.1" 200 -
+10.127.4.67 - - [05/Mar/2014 23:10:25] "GET /id HTTP/1.1" 200 -
+10.127.4.67 - - [05/Mar/2014 23:10:30] "GET /descrip HTTP/1.1" 200 -
+Started chatserver...
+Started chatserver...
+10.127.4.19 - - [14/Mar/2014 03:18:00] "GET / HTTP/1.1" 404 -
+10.127.4.19 - - [14/Mar/2014 03:18:52] "GET / HTTP/1.1" 404 -
+^C received, shutting down chatserver...
+Started chatserver...
+10.127.4.19 - - [14/Mar/2014 05:34:13] "GET / HTTP/1.1" 200 -
+10.127.4.19 - - [14/Mar/2014 05:35:19] "GET / HTTP/1.1" 200 -
+^C received, shutting down chatserver...
+Started chatserver...
+10.127.4.19 - - [14/Mar/2014 06:21:16] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 7, in <module>
+    os.chdir(os.getenv('HOME') + '/dev/webserver/chat/x/content/')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/chat/x/content/'
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 7, in <module>
+    os.chdir(os.getenv('HOME') + '/dev/webserver/chat/x/content/')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/dev/webserver/chat/x/content/'
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 157, in <module>
+    main()
+  File "chat/x/chatserverx.py", line 132, in main
+    os.chdir(os.getenv('HOME') + '/webserver/chat/x/content/')
+OSError: [Errno 2] No such file or directory: '/home/kwarrtz/webserver/chat/x/content/'
+Started chatserver...
+10.127.4.55 - - [27/Mar/2014 18:53:52] "GET / HTTP/1.1" 200 -
+10.127.4.55 - - [27/Mar/2014 18:54:19] "GET /getmsg@Dathan@dRasPiChat HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 50, in do_GET
+NameError: global name 'usrList' is not defined
+10.127.4.55 - - [27/Mar/2014 18:58:11] "GET /sndmsg@Dylan@password@Dathan@hi HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 34, in do_GET
+NameError: global name 'usrList' is not defined
+10.127.4.55 - - [27/Mar/2014 18:58:15] "GET /sndmsg@Dylan@password@Dathan@hi HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 34, in do_GET
+NameError: global name 'usrList' is not defined
+Started chatserver...
+10.127.4.31 - - [29/Mar/2014 04:46:18] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:46:23] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:46:23] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:47:03] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:47:12] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:47:12] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:49:58] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:50:06] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:50:34] "GET / HTTP/1.1" 200 -
+10.127.4.31 - - [29/Mar/2014 04:56:28] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 158, in <module>
+    main()
+  File "chat/x/chatserverx.py", line 139, in main
+    server = HTTPServer(('', 7000), MyHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+10.127.4.31 - - [29/Mar/2014 16:51:38] "GET /descrip HTTP/1.1" 200 -
+10.127.4.31 - - [30/Mar/2014 04:20:16] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 50, in do_GET
+NameError: global name 'usrList' is not defined
+10.127.4.31 - - [30/Mar/2014 04:20:20] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 50, in do_GET
+NameError: global name 'usrList' is not defined
+  File "chat/x/chatserverx.py", line 1
+SyntaxError: Non-ASCII character '\xc2' in file chat/x/chatserverx.py on line 1, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+Traceback (most recent call last):
+  File "chat/x/chatserverx.py", line 160, in <module>
+    main()
+  File "chat/x/chatserverx.py", line 139, in main
+    g.msgList = eval(msgFile.read())
+NameError: global name 'msgFile' is not defined
+Started chatserver...
+10.127.4.31 - - [30/Mar/2014 04:35:30] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 328, in handle_one_request
+    method()
+  File "chat/x/chatserverx.py", line 62, in do_GET
+NameError: global name 'f' is not defined
+^C received, shutting down chatserver...
+Started chatserver...
+10.127.4.31 - - [30/Mar/2014 04:37:27] "GET /getmsg@Dathan@dRasPi1Chat HTTP/1.1" 200 -
+Started chatserver...
+10.127.4.49 - - [27/Apr/2014 00:30:42] "GET /favicon.ico HTTP/1.1" 404 -
+10.127.4.49 - - [27/Apr/2014 00:30:44] "GET /descrip HTTP/1.1" 200 -

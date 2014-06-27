@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>
+      X
+    </title>
+  </head>
+  <body link="dimgrey" vlink="dimgrey" alink="blue" style="text-decoration:none">
+    <div>
+      <div>
+        <p style="font-size:24pt;">
+          RasPi_1
+        </p>
+      </div>
+      <div>
+        <a href="x_main.html">Main Page</a>
+      </div>
+      <div>
+        <a href="x_info.html">Info</a>
+      </div>
+      <div>
+        <a href="x_stats.html">Statistics</a>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td><a href="x_upload.html">File Upload</a>
+            <td><img src="gr.jpg" height="15px" width="7px"
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="margin:auto; width:60%;">
+      <form method='POST' enctype='multipart/form-data' action='http://raspi1:8000/'>
+        File to upload: <input type=file name=upfile>
+        <br>
+        <br>
+        <input type=submit value=Press> to upload the file!
+      </form>
+    </div>
+  </body>
+</html> 

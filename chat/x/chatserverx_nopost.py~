@@ -1,0 +1,160 @@
+import string, cgi, time, sys, re
+from os import curdir, sep
+from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+import os
+CWD = os.path.abspath('.')
+os.chdir(os.getenv('HOME') + '/webserver/chat/x/content/')
+msgFile = open('msgs.txt', 'r+')
+usrFile = open('usrs.txt', 'r+')
+msgFile.seek(0)
+usrFile.seek(0)
+msgList = eval(msgFile.read())
+usrList = eval(usrFile.read())
+maintinenceResponses = {'/': 'KD2 ChatServer-X',
+                        '/descrip': 'KD2 Expirimental Backend ChatServer for Raspberry Chat System',
+                        '/id': 'ChatServer-X',
+                        '/status': 'active'}
+def isValidChars(string):
+    if string != re.compile.search.group():
+        ret = False
+    else:
+        ret = True
+    return ret
+#-----------------------------------------------------------------------------------------------------------------------
+
+class MyHandler(BaseHTTPRequestHandler):
+
+    def do_GET(self):
+        global usrList
+        try:
+            location = self.path
+            print location
+            data = {}
+
+            if self.path.startswith('/sndmsg'):
+                self.send_response(200)
+                self.send_header('Content-type',      'text/ascii')
+                self.end_headers()
+                spltMsg = self.path.split('@')
+                try:
+                    if usrList[spltMsg[1]] == spltMsg[2]:
+                        self.wfile.write('Message sent')
+                        spltMsg = self.path.split('@')
+                        msgList[spltMsg[4]].append([spltMsg[1], spltMsg[3]])
+                    else:
+                        self.wfile.write('Password invalid')
+                except KeyError:
+                    self.wfile.write('Username invalid')
+                return
+
+            if self.path.startswith('/getmsg'):
+                self.send_response(200)
+		self.send_header('Content-type',	'text/ascii')
+                self.end_headers()
+                spltMsg = self.path.split('@')
+                try:
+                    if usrList[spltMsg[1]] == spltMsg[2]:
+                        allMsg = ''
+                        for msg in msgList[spltMsg[1]]:
+                            allMsg = allMsg + msg[0] + '@' + msg[1] + '$'
+                        self.wfile.write(allMsg)
+                    else:
+                        self.wfile.write('Password invalid')
+                except KeyError:
+                     self.wfile.write('Username invalid')
+                return
+
+            if self.path.startswith('/clrmsg'):
+                self.send_response(200)
+                self.send_header('Content-type',       'text/ascii')
+                self.end_headers()
+                spltMsg = self.path.split('@')
+                try:
+                    if usrList[spltMsg[1]] == spltMsg[2]:
+                        self.wfile.write('Messages cleared')
+                        for i in range(len(msgList[spltMsg[1]])):
+                            msgList[spltMsg[1]].remove(i - 1)
+                    else:
+                        self.wfile.write('Password invalid')
+                except KeyError:
+                    self.wfile.write('Username invalid')
+                return
+
+            if self.path == '/uptusr':
+                self.send_response(200)
+                self.send_header('Content-type',      'text/ascii')
+                self.end_headers()
+                usrFile.seek(0)
+                usrList = eval(usrFile.read())
+                return
+
+            if self.path.startswith('newusr'):
+                self.send_response(200)
+                self.send_header('Content-type',      'text/ascii')
+                self.end_headers()
+                spltMsg = self.path.split('@')
+                if not spltMsg[1] in usrList:
+                    if isValidChars(spltMsg[1]) and isValidChars(spltMsg[2]):
+                        usrList[spltMsg[1]] = spltMsg[2]
+                        msgList[spltMsg[1]] = []
+                        self.wfile.write('User added')
+                    else:
+                        self.wfile.write('Invalid character found')
+                else:
+                    self.wfile.write('Username taken')
+                return
+                        
+            if self.path.startswith('authusr'):
+                self.send_response(200)
+                self.send_header('Content-type', 'text/ascii')
+                self.end_headers()
+                spltMsg = self.path.split('@')
+                if spltMsg[1] in usrList:
+                    self.wfile.write('Account exists')
+                else:
+                    self.wfile.write('Account does not exist')
+
+            if self.path in maintinenceResponses:
+                self.send_response(200)
+                self.send_header('Content-type',	'text/ascii')
+                self.end_headers()
+                self.wfile.write(maintinenceResponses[self.path])
+                return
+
+            else:
+                self.send_response(404)
+                self.send_header('Content-type',	'text/html')
+                self.end_headers()
+                self.wfile.write('The page: "' + self.path + '" has not been found' + "<BR>\n")
+                self.wfile.write('location = ' + location + "<BR>\n")
+                self.wfile.write('data = ' + str(data) + "<BR>\n")
+                self.wfile.write(dir(self))
+                return        
+                
+            return
+                
+        except IOError, e:
+            self.send_error(404,"File Not Found: %s\n<BR>%s" % (self.path, e))
+     
+def main():
+    try:
+        server = HTTPServer(('', 7000), MyHandler)
+        print 'Started chatserver...'
+        sys.stderr.write('Started chatserver...\n')
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print ' received, shutting down chatserver...'
+        sys.stderr.write('^C received, shutting down chatserver...\n')
+	msgFile.seek(0)
+	msgFile.write(str(msgList))
+	msgFile.truncate()
+        usrFile.seek(0)
+        usrFile.write(str(usrList))
+        usrFile.truncate()
+        msgFile.close()
+        usrFile.close()
+        server.socket.close()
+
+if __name__ == '__main__':
+    main()
+

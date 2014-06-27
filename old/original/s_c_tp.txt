@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>
+      Source Code
+    </title>
+  </head>
+  <body style="background-color: navy;">
+    <div style="margin: 20% auto; width:70%; background-color:white; border-style:solid;">
+      <h1 style="font-size:36pt; text-align:center;">
+        RasPi_1
+      </h1>
+      <h3 style="font-size:24pt; text-align:center;">
+        Source Code
+      </h3>
+      <form>
+        <input type="button"
+        value="Main Page"
+        onclick="window.location.href='s_c_mp.txt'">
+      </form>
+      <form>
+        <input type="button"
+        value="File Download"
+        onclick="window.location.href='s_c_fd.html'">
+      </form>
+    </div>
+  </body>
+</html>
+
+
+

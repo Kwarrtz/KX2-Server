@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $1 == 'chatx' ]
+then
+   echo chat/x/chatlogx.txt
+fi
+
+if [ $1 == 'htmlp' ]
+then
+   echo html/p/htmllogp.txt
+fi 
